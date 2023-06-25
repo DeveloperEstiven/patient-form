@@ -20,8 +20,6 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* eslint-disable-next-line */}
-      {/* @ts-ignore */}
       <GlobalStyle />
       <Styled.App>
         <Styled.Card>
