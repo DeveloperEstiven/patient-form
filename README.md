@@ -22,4 +22,5 @@
 
 1. `git clone https://github.com/DeveloperEstiven/patient-form.git`
 2. `cd patient-form`
-3. `yarn dev`
+3. `yarn`
+4. `yarn dev`
