@@ -1,25 +1,64 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "ESNext",
     "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+    "moduleResolution": "Node",
+    "newLine": "CRLF",
     "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "pretty": true,
+    "noEmit": true,
+    "strict": true,
+
+    "allowUnreachableCode": false,
+    "downlevelIteration": false,
+    "allowUnusedLabels": false,
+    "strictNullChecks": true,
+    "esModuleInterop": false,
+    "diagnostics": false,
+    "allowJs": false,
+
+    "baseUrl": "src",
+    "paths": {
+      "constants/*": ["constants/*"],
+
+      "components/*": ["components/*"],
+      "molecules/*": ["components/molecules/*"],
+      "organisms/*": ["components/organisms/*"],
+      "atoms/*": ["components/atoms/*"],
+
+      "styles/*": ["styles/*"],
+      "theme/*": ["theme/*"],
+
+      "hooks/*": ["hooks/*"],
+      "utils/*": ["utils/*"],
+
+      "icons/*": ["assets/icons/*"],
+      "images/*": ["assets/images/*"],
+      "animations/*": ["assets/animations/*"],
+      "fonts/*": ["assets/fonts/*"],
+
+      "services/*": ["services/*"],
+      "modules/*": ["modules/*"],
+      "store/*": ["store/*"],
+      "screens/*": ["screens/*"],
+
+      "types/*": ["types/*"],
+      "typings/*": ["typings/*"]
+    }
   },
+
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

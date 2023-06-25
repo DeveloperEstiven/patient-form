@@ -9,6 +9,8 @@ module.exports = {
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   plugins: ["react-refresh"],
   rules: {
+    "no-empty-interface": "off",
     "react-refresh/only-export-components": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off",
   },
 };
